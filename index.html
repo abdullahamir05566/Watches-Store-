@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watches</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Sections */
+        section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #home {
+            background: url('luxury-watch-bg.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 15px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Watch Grid */
+        .watch-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .watch {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 250px;
+        }
+
+        .watch img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .watch h3 {
+            margin: 10px 0;
+        }
+
+        .watch button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .watch button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luxury Watches</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#watches">Watches</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Find Your Perfect Watch</h2>
+        <p>Discover the finest collection of luxury watches.</p>
+        <a href="#watches" class="btn">Shop Now</a>
+    </section>
+
+    <section id="watches">
+        <h2>Our Collection</h2>
+        <div class="watch-grid">
+            <div class="watch">
+                <img src="watch1.jpg" alt="Watch 1">
+                <h3>Classic Timepiece</h3>
+                <p>$499</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="watch">
+                <img src="watch2.jpg" alt="Watch 2">
+                <h3>Modern Elegance</h3>
+                <p>$699</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="watch">
+                <img src="watch3.jpg" alt="Watch 3">
+                <h3>Luxury Gold</h3>
+                <p>$999</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Watches. All rights reserved.</p>
+    </footer>
+</body>
+</html>
