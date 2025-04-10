@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Watch Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">About Us</h1>
+        </div>
+    </header>
+    <script>
+        // Function to display an alert when the page loads
+        function showWelcomeMessage() {
+            alert("Welcome to our Watch Store!");
+        }
+
+        // Function to change the background color of the header on hover
+        function changeHeaderColor() {
+            const header = document.querySelector('header');
+            header.addEventListener('mouseover', () => {
+                header.style.backgroundColor = '#1a202c'; // Darker shade
+            });
+            header.addEventListener('mouseout', () => {
+                header.style.backgroundColor = '#2d3748'; // Original shade
+            });
+        }
+
+        // Call the functions
+        window.onload = () => {
+            showWelcomeMessage();
+            changeHeaderColor();
+        };
+    </script>
+    <main class="container mx-auto py-8 px-4">
+        <section class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to Our Watch Store</h2>
+            <p class="mb-4">
+                At our watch store, we are passionate about providing high-quality timepieces that combine style, precision, and durability. Our collection features a wide range of watches to suit every taste and occasion.
+            </p>
+            <p class="mb-4">
+                Established with a vision to bring timeless elegance to your wrist, we carefully curate our selection to ensure that every watch meets our high standards of craftsmanship and design.
+            </p>
+            <p>
+                Whether you're looking for a classic design, a modern statement piece, or a reliable everyday watch, we have something for everyone. Thank you for choosing us to be a part of your journey in timekeeping.
+            </p>
+        </section>
+
+        <section class="mt-8">
+            <h3 class="text-xl font-semibold mb-4">Our Mission</h3>
+            <p class="bg-gray-200 p-4 rounded-lg">
+                Our mission is to deliver exceptional watches that inspire confidence and reflect individuality. We strive to provide outstanding customer service and ensure your satisfaction with every purchase.
+            </p>
+        </section>
+
+        <section class="mt-8">
+            <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+            <p class="bg-gray-200 p-4 rounded-lg">
+                Have questions or need assistance? Feel free to reach out to us at <a href="mailto:info@watchstore.com" class="text-blue-500 underline">info@watchstore.com</a>. We're here to help!
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Watch Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
